@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.game-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-status {
+  color: #333;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  gap: 0px;
+  margin-bottom: 20px;
+  margin-left: 145px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.cell.X {
+  background-image: url("x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.cell.O {
+  background-image: url("o.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.cell.winning {
+  background-color: #4caf50;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+.start-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #78f87d;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restart-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(253, 253, 129);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
